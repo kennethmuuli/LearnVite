@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && surge ./dist holistic-profit.surge.sh"
   },
   "dependencies": {
     "nanoid": "^4.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "surge": "^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
